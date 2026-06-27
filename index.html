@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capivara Clicker V4</title>
+    <title>Capivara Clicker PRO</title>
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,36 +13,40 @@
         <h1>Capivara Clicker</h1>
         
         <div class="placar">
-            <h2>Dinheiro: $<span id="txt-moedas">0</span></h2>
-            <p>Por Clique: $<span id="txt-por-clique">1</span> | Por Segundo: $<span id="txt-por-segundo">0</span></p>
+            <h2>$<span id="txt-moedas">0</span></h2>
+            <p>Por Clique: +$<span id="txt-por-clique">1</span> | Por Segundo: +$<span id="txt-por-segundo">0</span></p>
         </div>
 
-        <div id="capivara-clicavel">
-            <span class="emoji-capivara">🦫</span>
+        <div id="area-clique">
+            <img id="capivara-clicavel" src="https://images.unsplash.com/photo-1561731206-c8a63134494d?w=400&auto=format&fit=crop&q=80" alt="Capivara">
         </div>
 
         <div class="secao-loja">
-            <h3>Lojinha da Capivara</h3>
+            <h3>Melhorias</h3>
             
             <div class="item-loja">
-                <h4>Roupinha Elegante</h4>
-                <p>Aumenta +1 por clique</p>
+                <div>
+                    <h4>Roupinha Elegante</h4>
+                    <p>Aumenta +1 por clique</p>
+                </div>
                 <button id="btn-upgrade-clique" onclick="comprarRoupinha()">
-                    Comprar ($<span id="txt-custo-clique">10</span>)
+                    $<span id="txt-custo-clique">10</span>
                 </button>
             </div>
 
             <div class="item-loja">
-                <h4>Capivara Estagiária</h4>
-                <p>Gera +1 moeda por segundo</p>
+                <div>
+                    <h4>Capivara Estagiária</h4>
+                    <p>Gera +1/segundo sozinho</p>
+                </div>
                 <button id="btn-upgrade-auto" onclick="comprarEstagiaria()">
-                    Comprar ($<span id="txt-custo-auto">50</span>)
+                    $<span id="txt-custo-auto">50</span>
                 </button>
             </div>
         </div>
 
         <div class="secao-perigo">
-            <button class="btn-reset" onclick="resetarJogo()">Resetar Progresso</button>
+            <button class="btn-reset" onclick="resetarJogo()">Resetar Jogo</button>
         </div>
     </div>
 
